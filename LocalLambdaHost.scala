@@ -283,7 +283,7 @@ object LocalLambdaHost {
 
       }
 
-      lazy val lambdaProcess = lambdaScript
+      val lambdaProcess = lambdaScript
         .map(script =>
           println(
             s"${CYAN}Running lambda script: $script ${RESET}"
@@ -301,7 +301,9 @@ object LocalLambdaHost {
                   "AWS_LAMBDA_FUNCTION_VERSION" -> "0"
                 ),
                 mergeErrIntoOut = true,
-                destroyOnExit = true
+                destroyOnExit = true,
+                stdout = os.Inherit,
+                stderr = os.Inherit
               )
           )
         )
@@ -310,18 +312,6 @@ object LocalLambdaHost {
             s"${CYAN}Waiting for you to run the lambda ...${RESET}"
           )
           None
-        }
-
-      val lambdaProcessThread =
-        Thread.ofVirtual().start {
-          new Runnable {
-            override def run(): Unit = {
-              lambdaProcess.map { p =>
-                p.stdout.transferTo(System.out)
-              }
-
-            }
-          }
         }
 
       ready = true
