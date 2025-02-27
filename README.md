@@ -13,11 +13,11 @@ Provides browser-based HTML interface to send input to lambda and to read output
 
 Use with SBT
 
-    libraryDependencies += "org.encalmo" %% "scala-aws-lambda-local-host" % "0.9.0"
+    libraryDependencies += "org.encalmo" %% "scala-aws-lambda-local-host" % "0.9.1"
 
 or with SCALA-CLI
 
-    //> using dep org.encalmo::scala-aws-lambda-local-host:0.9.0
+    //> using dep org.encalmo::scala-aws-lambda-local-host:0.9.1
 
 ## Options
 
@@ -47,7 +47,7 @@ scala run --main-class org.encalmo.lambda.host.LocalLambdaHost \
     --suppress-outdated-dependency-warning . \
     -- \
     --mode=browser \
-    --lambda-script="scala run --quiet --suppress-directives-in-multiple-files-warning --suppress-outdated-dependency-warning --dependency=org.encalmo::scala-aws-lambda-runtime:0.9.0 --main-class org.encalmo.lambda.TestEchoLambda" \
+    --lambda-script="scala run --quiet --suppress-directives-in-multiple-files-warning --suppress-outdated-dependency-warning --dependency=org.encalmo::scala-aws-lambda-runtime:0.9.1 --main-class org.encalmo.lambda.TestEchoLambda" \
     --lambda-name=Echo
 ```
 
