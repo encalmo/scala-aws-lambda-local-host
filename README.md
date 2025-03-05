@@ -1,3 +1,5 @@
+![Maven Central Version](https://img.shields.io/maven-central/v/org.encalmo/scala-aws-lambda-local-host_3?style=for-the-badge)
+
 # scala-aws-lambda-local-host
 
 Local emulator of the AWS Lambda host environment.
