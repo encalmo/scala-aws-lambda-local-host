@@ -11,6 +11,8 @@ Provides browser-based HTML interface to send input to lambda and to read output
 ![image](screenshot.png)
 ![image](screenshot2.jpg)
 
+## Dependencies
+
 ## Usage
 
 Use with SBT
