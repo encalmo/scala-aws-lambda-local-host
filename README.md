@@ -1,4 +1,4 @@
-![Maven Central Version](https://img.shields.io/maven-central/v/org.encalmo/scala-aws-lambda-local-host_3?style=for-the-badge)
+<a href="https://github.com/encalmo/scala-aws-lambda-local-host">![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)</a> <a href="https://central.sonatype.com/artifact/org.encalmo/scala-aws-lambda-local-host_3" target="_blank">![Maven Central Version](https://img.shields.io/maven-central/v/org.encalmo/scala-aws-lambda-local-host_3?style=for-the-badge)</a> <a href="https://encalmo.github.io/scala-aws-lambda-local-host/scaladoc/org/encalmo/lambda/host.html" target="_blank"><img alt="Scaladoc" src="https://img.shields.io/badge/docs-scaladoc-red?style=for-the-badge"></a>
 
 # scala-aws-lambda-local-host
 
@@ -12,6 +12,9 @@ Provides browser-based HTML interface to send input to lambda and to read output
 ![image](screenshot2.jpg)
 
 ## Dependencies
+
+   - [Scala](https://www.scala-lang.org) >= 3.3.5
+   - com.lihaoyi [**os-lib** 0.11.4](https://github.com/com-lihaoyi/os-lib)
 
 ## Usage
 
